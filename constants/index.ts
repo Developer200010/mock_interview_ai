@@ -1,4 +1,4 @@
-import { CreateAssistantDTO } from "@vapi-ai/web/dist/api";
+// import { CreateAssistantDTO } from "@vapi-ai/web/dist/api";
 import { z } from "zod";
 
 export const mappings = {
@@ -203,3 +203,29 @@ export const interviewCovers = [
   "/tiktok.png",
   "/yahoo.png",
 ];
+
+
+export const dummyInterview : Interview[] = [
+  {
+    id: "1",
+    userId: "user1",
+    role:"Frontend Developer",
+    type: "Technical",
+    techstack: ["React", "Typescript"],
+    level: "Junior",
+    questions: ["What is React?"],
+    finalized:false,
+    createdAt: "2025-03-01T10:00:002"
+  },
+  {
+    id: "1",
+    userId: "user1",
+    role:"Frontend Developer",
+    type: "Technical",
+    techstack: ["React", "Typescript"],
+    level: "Junior",
+    questions: ["What is React?"],
+    finalized:false,
+    createdAt: "2025-03-01T10:00:002"
+  }
+]
