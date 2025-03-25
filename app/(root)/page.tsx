@@ -8,7 +8,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-    <section className='card-cta'>
+    <section className='card-cta p-3'>
       <div className='flex flex-col gap-6 max-w-lg'>
         <h2>
           Get Interview-Ready with AI-Powered Practice & Feedback.
@@ -21,21 +21,21 @@ const page = () => {
       <Image src="/robot.png" alt='robo-dude' width={400} height={400} className='max-sm:hidden'/>
     </section>
 
-    <section className='flex flex-col gap-6 mt-8'>
-      <h2>Your Interviews</h2>
+    <section className='flex flex-col gap-6 mt-8 p-2'>
+      <h2 className='text-center underline'>Your Interviews</h2>
 
-      <div className='interviews-section'>
-        {dummyInterview.map((interview)=>(
-          <InterviewCard {...interview}/>
+      <div className='interviews-section flex flex-wrap gap-4 justify-start w-full max-w-6xl mx-auto'>
+        {dummyInterview.map((interview,i)=>(
+          <InterviewCard {...interview} key={i}/>
         ))}
         
       </div>
     </section>
-    <section className='flex flex-col gap-6 mt-8'>
-      <h2>Take an interview</h2>
-      <div className="interviews-section">
-      {dummyInterview.map((interview)=>(
-          <InterviewCard {...interview}/>
+    <section className='flex flex-col gap-6 mt-8 p-2'>
+      <h2 className='text-center underline'>Take an interview</h2>
+      <div className="interviews-section flex flex-wrap gap-4 justify-start w-full max-w-6xl mx-auto">
+      {dummyInterview.map((interview,i)=>(
+          <InterviewCard {...interview} key={i}/>
         ))}      </div>
     </section>
     </>

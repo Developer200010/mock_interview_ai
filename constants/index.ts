@@ -218,11 +218,44 @@ export const dummyInterview : Interview[] = [
     createdAt: "2025-03-01T10:00:002"
   },
   {
-    id: "1",
-    userId: "user1",
-    role:"Frontend Developer",
+    id: "2",
+    userId: "user2",
+    role:"backend Developer",
     type: "Technical",
-    techstack: ["React", "Typescript"],
+    techstack: ["React", "Typescript","node.js"],
+    level: "Junior",
+    questions: ["What is React?"],
+    finalized:false,
+    createdAt: "2025-03-01T10:00:002"
+  },
+  {
+    id: "2",
+    userId: "user2",
+    role:"backend Developer",
+    type: "Technical",
+    techstack: ["React", "Typescript","node.js"],
+    level: "Junior",
+    questions: ["What is React?"],
+    finalized:false,
+    createdAt: "2025-03-01T10:00:002"
+  },
+  {
+    id: "2",
+    userId: "user2",
+    role:"backend Developer",
+    type: "Technical",
+    techstack: ["React", "Typescript","node.js"],
+    level: "Junior",
+    questions: ["What is React?"],
+    finalized:false,
+    createdAt: "2025-03-01T10:00:002"
+  },
+  {
+    id: "2",
+    userId: "user2",
+    role:"backend Developer",
+    type: "Technical",
+    techstack: ["React", "Typescript","node.js"],
     level: "Junior",
     questions: ["What is React?"],
     finalized:false,
